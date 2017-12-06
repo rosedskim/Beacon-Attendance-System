@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="reco-sdk-android-unspecified">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/bbd92223bf9f31898a027b967a16cb1f27e58fae/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/bbd92223bf9f31898a027b967a16cb1f27e58fae/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
