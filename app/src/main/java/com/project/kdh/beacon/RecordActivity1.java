@@ -67,7 +67,6 @@ public class RecordActivity1 extends AppCompatActivity {
                     //강의 아이디가 같은거일때만
                     if(lecture_id.equals(snapshot.getKey()))
                     {
-                        Log.d("bbb",snapshot.child("record").child(LocalDB.getUserId()).getValue().toString());
                         Iterator it=snapshot.child("record").child(LocalDB.getUserId()).getChildren().iterator();
 
                         while(it.hasNext())
