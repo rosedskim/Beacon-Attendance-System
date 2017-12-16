@@ -1,6 +1,5 @@
 package com.project.kdh.beacon;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +19,7 @@ public abstract class RecoActivity extends AppCompatActivity implements RECOServ
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mRecoManager = RECOBeaconManager.getInstance(getApplicationContext(), MenuActivity.SCAN_RECO_ONLY, MenuActivity.ENABLE_BACKGROUND_RANGING_TIMEOUT);
+        mRecoManager = RECOBeaconManager.getInstance(getApplicationContext(), MenuActivity1.SCAN_RECO_ONLY, MenuActivity1.ENABLE_BACKGROUND_RANGING_TIMEOUT);
         //mRegions = this.generateBeaconRegion();
         mRegions = this.generateBeaconRegion();
         Log.d("mRegions_count", ""+mRegions.size());
@@ -31,7 +30,7 @@ public abstract class RecoActivity extends AppCompatActivity implements RECOServ
         ArrayList<RECOBeaconRegion> regions = new ArrayList<RECOBeaconRegion>();
 
         RECOBeaconRegion recoRegion;
-        recoRegion = new RECOBeaconRegion(MenuActivity.RECO_UUID, "RECO Sample Region");
+        recoRegion = new RECOBeaconRegion(MenuActivity1.RECO_UUID, "RECO Sample Region");
         regions.add(recoRegion);
 
         return regions;

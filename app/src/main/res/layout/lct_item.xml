@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white_round"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="강좌명" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/lctNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="교수명" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/prfNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+    android:textColor="#000000"
+    android:gravity="center"
+    android:textSize="15sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="강의시간/강의실" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/infoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>

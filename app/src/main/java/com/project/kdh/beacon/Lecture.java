@@ -2,42 +2,52 @@ package com.project.kdh.beacon;
 
 import java.util.ArrayList;
 
-/**
- * Created by 동현 on 2017-12-06.
- */
+public class Lecture { // 강의 클래스
+    private String lctId;
+    private String lctName;
+    private String prfName;
+    private ArrayList<LctInfo> lctInfos = new ArrayList<LctInfo>(); //강의 정보 리스트(수업 시간, 진행 요일, 진행 강의실)
 
-public class Lecture {
-    private String lid;
-    private String name;
-    private ArrayList<LctInfo> infoList;
+    //===========================================================================================
 
-    Lecture(String lid, String name, ArrayList<LctInfo> infoList){
-        this.lid = lid;
-        this.name = name;
-        this.infoList = infoList;
+    Lecture(String lctId, String lctName, String prfName, ArrayList<LctInfo> lctInfos){
+        this.lctId = lctId;
+        this.lctName = lctName;
+        this.prfName = prfName;
+        this.lctInfos = lctInfos;
     }
 
-    public String getLid() {
-        return lid;
+    //===========================================================================================
+
+    public String getLctId() {
+        return lctId;
     }
 
-    public void setLid(String lid) {
-        this.lid = lid;
+    public void setLctId(String lctId) {
+        this.lctId = lctId;
     }
 
-    public String getName() {
-        return name;
+    public String getLctName() {
+        return lctName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLctName(String lctName) {
+        this.lctName = lctName;
     }
 
-    public ArrayList<LctInfo> getInfoList() {
-        return infoList;
+    public String getPrfName() {
+        return prfName;
     }
 
-    public void setInfoList(ArrayList<LctInfo> infoList) {
-        this.infoList = infoList;
+    public void setPrfName(String prfName) {
+        this.prfName = prfName;
+    }
+
+    public ArrayList<LctInfo> getLctInfos() {
+        return lctInfos;
+    }
+
+    public void setLctInfos(ArrayList<LctInfo> lctInfos) {
+        this.lctInfos = lctInfos;
     }
 }

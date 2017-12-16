@@ -1,13 +1,11 @@
 package com.project.kdh.beacon;
 
-/**
- * Created by 동현 on 2017-12-06.
- */
 
 public class RecordViewItem {
     String date = "";
     int src;
     int type;
+
 
     public String getDate() {
         return date;

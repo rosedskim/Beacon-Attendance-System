@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/white_round"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/ntcTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="작성일" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/ntcDateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내용" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/ntcContentTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>

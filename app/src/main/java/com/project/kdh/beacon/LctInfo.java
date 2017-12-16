@@ -1,58 +1,55 @@
 package com.project.kdh.beacon;
 
-
-import com.google.firebase.database.Exclude;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /**
- * Created by jsh on 2017-11-19.
+ * Created by 동현 on 2017-12-17.
  */
 
 public class LctInfo {
-    String day;
-    String stime;
-    String etime;
-    String rid;
+    private String lctDay; // 수업 진행 요일
+    private String lctSTime; // 수업 시작 요일
+    private String lctETime; // 수업 종료 요일
+    private String roomId; // 강의실 아이디
 
-    public  LctInfo(){    }
-    public LctInfo(String day, String stime, String etime, String rid){
-        this.day = day;
-        this.stime = stime;
-        this.etime = etime;
-        this.rid = rid;
+    //===========================================================================================
+
+    public LctInfo(String lctDay, String lctSTime, String lctETime, String roomId){
+        this.lctDay =lctDay;
+        this.lctSTime = lctSTime;
+        this.lctETime = lctETime;
+        this.roomId = roomId;
+    }
+    //===========================================================================================
+
+
+    public String getLctDay() {
+        return lctDay;
     }
 
-    public String getDay() {
-        return day;
+    public void setLctDay(String lctDay) {
+        this.lctDay = lctDay;
     }
 
-    public void setDay(String day) {
-        this.day = day;
+    public String getLctSTime() {
+        return lctSTime;
     }
 
-    public String getStime() {
-        return stime;
+    public void setLctSTime(String lctSTime) {
+        this.lctSTime = lctSTime;
     }
 
-    public void setStime(String stime) {
-        this.stime = stime;
+    public String getLctETime() {
+        return lctETime;
     }
 
-    public String getEtime() {
-        return etime;
+    public void setLctETime(String lctETime) {
+        this.lctETime = lctETime;
     }
 
-    public void setEtime(String etime) {
-        this.etime = etime;
+    public String getRoomId() {
+        return roomId;
     }
 
-    public String getRid() {
-        return rid;
-    }
-
-    public void setRid(String rid) {
-        this.rid = rid;
+    public void setRoomId(String roomId) {
+        this.roomId = roomId;
     }
 }
